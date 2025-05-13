@@ -1,6 +1,6 @@
 # Akto MCP Server
 
-Akto MCP Server is a Spring Boot-based Model Context Protocol (MCP) server, designed to provide AI-powered tools and APIs. It leverages the Spring AI MCP Server starter and is container-ready for easy deployment.
+Akto MCP Server is a Spring Boot-based Model Context Protocol (MCP) server, designed to provide AI-powered tools and APIs to interact with Akto. It leverages the Spring AI and is container-ready for easy deployment.
 
 ## Features
 
@@ -80,7 +80,6 @@ Below is an example configuration for integrating with an MCP client:
 ```
 
 - Replace `your_api_key` with your actual Akto API key.
-- Make sure the Docker image name matches the one you built or pulled.
 - This configuration allows the client to start and connect to the Akto MCP Server automatically.
 
 Refer to your MCP client's documentation for the exact location and format of this configuration.
@@ -140,42 +139,8 @@ Refer to your MCP client's documentation for the exact location and format of th
    ```
 3. Save the file and restart Claude Desktop.
 
----
-
-### Cline
-
-**Config File Location:**
-- On **macOS**:  
-  `~/Library/Application Support/Code/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json`
-- On **Windows**:  
-  `%APPDATA%\Code\User\globalStorage\saoudrizwan.claude-dev\settings\cline_mcp_settings.json`
-
-**Steps:**
-1. Open the `cline_mcp_settings.json` file.
-2. Add your MCP server config under the `"mcpServers"` key.
-3. Save and restart Cline.
-
----
-
-## Example: Adding Akto MCP Server
-
-**For Cursor:**  
-- Use the UI: Settings → MCP tab → Add new global MCP server → Paste config.
-
-**For Claude Desktop:**  
-- Edit `claude_desktop_config.json` and add your config under `"mcpServers"`.
-
-**For Cline:**  
-- Edit `cline_mcp_settings.json` and add your config under `"mcpServers"`.
-
----
-
 ### Troubleshooting
 
 - If the server does not appear, ensure your JSON is valid and the app is restarted.
 - For Cursor, always use the UI as file-based config is not supported.
-- For Claude and Cline, ensure you are editing the correct file for your OS.
-
-## License
-
-See `pom.xml` for license details.
+- For Claude, ensure you are editing the correct file for your OS.
