@@ -6,10 +6,7 @@ Akto MCP Server is a Spring Boot-based Model Context Protocol (MCP) server, desi
 
 - **Spring Boot 3.4.5** application
 - **Model Context Protocol (MCP)** support via Spring AI
-- **REST API** endpoints (OpenAPI specs included)
-- **MongoDB** integration (see guides)
 - **Docker** support for containerized deployment
-- **Configurable via environment variables and properties**
 
 ## Prerequisites
 
