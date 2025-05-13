@@ -1,5 +1,9 @@
 package io.akto.mcp.tools;
 
+import io.akto.mcp.model.FetchSeverityInfoForIssuesRequest;
+import io.akto.mcp.model.FetchTestingRunResultRequest;
+import io.akto.mcp.model.FetchTestingRunResultsRequest;
+import io.akto.mcp.model.TestingIssueId;
 import io.akto.mcp.models.RetrieveAllCollectionTestsRequest;
 import io.akto.mcp.processor.ApiProcessor;
 import java.util.Collections;
@@ -10,7 +14,6 @@ import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Slf4j
 @Service
@@ -37,15 +40,15 @@ public class AktoTools {
         return getResponseFromAkto("api/getAllCollections", Collections.emptyMap());
     }
 
-    @Tool(name = "get_collection", description = """
+    @Tool(name = "getCollection", description = """
         POST /api/getCollection
         Example request body:
         {"request": {
           "apiCollectionId": 1111111111
         }}
         """)
-    public String getCollection(Map<String, Object> arguments) {
-        return getResponseFromAkto("api/getCollection", arguments);
+    public String getCollection(Map<String, Object> request) {
+        return getResponseFromAkto("api/getCollection", request);
     }
 
     @Tool(name = "retrieveAllCollectionTests", description = """
@@ -59,7 +62,7 @@ public class AktoTools {
           "skip": 0,
           "filters": null,
           "endTimestamp": 1778658161,
-          "testingRunType": "null",
+          "testingRunType": null,
           "startTimestamp": 0
         }}
         """)
@@ -74,7 +77,7 @@ public class AktoTools {
           "endTimeStamp": 0
         }}
         """)
-    public String fetchSeverityInfoForIssues(Map<String, Object> request) {
+    public String fetchSeverityInfoForIssues(FetchSeverityInfoForIssuesRequest request) {
         return getResponseFromAkto("api/fetchSeverityInfoForIssues", request);
     }
 
@@ -268,13 +271,13 @@ public class AktoTools {
             "testingIssueId": {
               "testSubCategory": "JWT_NONE_ALGO",
               "testErrorSource": "AUTOMATED_TESTING",
-              "testCategoryFromSourceConfig": "null",
+              "testCategoryFromSourceConfig": null,
               "apiInfoKey": {
                 "method": "GET",
                 "apiCollectionId": 1111111111,
                 "url": "https://vulnerable-server.akto.io/api/college/student-details"
               },
-              "testSourceConfig": "null"
+              "testSourceConfig": null
             },
             "endPointStr": "Endpoint - /api/college/student-details",
             "issueDescription": "Description - The endpoint appears to be vulnerable to broken authentication attack.The original request was replayed by changing algorithm of JWT token to NONE in request headers. The server responded with 2XX success codes. This indicates that this endpoint can be accessed without JWT signature which means a malicious user can get unauthorized access to this endpoint. Background: All JSON Web Tokens should contain the \\alg\\ header parameter, which specifies the algorithm that the server should use to verify the signature of the token. In addition to cryptographically strong algorithms the JWT specification also defines the \\none\\ algorithm, which can be used with \\unsecured\\ (unsigned) JWTs. When this algorithm is supported on the server, it may accept tokens that have no signature at all. As the JWT header can be tampered with client-side, a malicious user could change the \\alg\\ header to \\none\\, then remove the signature and check whether the server still accepts the token.\n"
@@ -344,17 +347,6 @@ public class AktoTools {
         """)
     public String fetchNewParametersTrend(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchNewParametersTrend", request);
-    }
-
-    @Tool(name = "deleteApiToken", description = """
-        POST /api/deleteApiToken
-        Example request body:
-        {"request": {
-          "apiTokenId": 1747031584
-        }}
-        """)
-    public String deleteApiToken(Map<String, Object> request) {
-        return getResponseFromAkto("api/deleteApiToken", request);
     }
 
     @Tool(name = "deleteTestRuns", description = """
@@ -429,22 +421,39 @@ public class AktoTools {
     @Tool(name = "fetchTestingRunResult", description = """
         POST /api/fetchTestingRunResult
         Example request body:
-        {"request": {
+        {
           "issueId": {
             "testSubCategory": "JWT_HEADER_PARAM_INJECTION_KID",
             "testErrorSource": "AUTOMATED_TESTING",
-            "testCategoryFromSourceConfig": "null",
+            "testCategoryFromSourceConfig": null,
             "apiInfoKey": {
               "method": "GET",
               "apiCollectionId": 1111111111,
               "url": "https://vulnerable-server.akto.io/api/college/student-details"
             },
-            "testSourceConfig": "null"
+            "testSourceConfig": null
           }
+        }≠
+        """)
+    public String fetchTestingRunResult(FetchTestingRunResultRequest request) {
+        return getResponseFromAkto("api/fetchTestingRunResult", request);
+    }
+
+    @Tool(name = "fetchTestingRunResults", description = """
+        POST /api/fetchTestingRunResults
+        Example request body:
+        {"request": {
+          "queryMode": "AND",
+          "sortKey": "severity",
+          "sortOrder": "desc",
+          "testingRunResultSummaryHexId": "6821a172934b8e3c4f933658",
+          "limit": 0,
+          "skip": 0,
+          "queryValue": "severity:HIGH"
         }}
         """)
-    public String fetchTestingRunResult(Map<String, Object> request) {
-        return getResponseFromAkto("api/fetchTestingRunResult", request);
+    public String fetchTestingRunResults(FetchTestingRunResultsRequest request) {
+        return getResponseFromAkto("api/fetchTestingRunResults", request);
     }
 
     @Tool(name = "fetchRemediationInfo", description = """
@@ -732,13 +741,13 @@ public class AktoTools {
             {
               "testSubCategory": "JWT_HEADER_PARAM_INJECTION_KID",
               "testErrorSource": "AUTOMATED_TESTING",
-              "testCategoryFromSourceConfig": "null",
+              "testCategoryFromSourceConfig": null,
               "apiInfoKey": {
                 "method": "GET",
                 "apiCollectionId": 1111111111,
                 "url": "https://vulnerable-server.akto.io/api/college/dashboard/home"
               },
-              "testSourceConfig": "null"
+              "testSourceConfig": null
             }
           ],
           "aktoDashboardHost": "https://app.akto.io"
@@ -770,13 +779,13 @@ public class AktoTools {
             {
               "testSubCategory": "JWT_HEADER_PARAM_INJECTION_KID",
               "testErrorSource": "AUTOMATED_TESTING",
-              "testCategoryFromSourceConfig": "null",
+              "testCategoryFromSourceConfig": null,
               "apiInfoKey": {
                 "method": "GET",
                 "apiCollectionId": 1111111111,
                 "url": "https://vulnerable-server.akto.io/api/college/dashboard/home"
               },
-              "testSourceConfig": "null"
+              "testSourceConfig": null
             }
           ]
         }}
@@ -877,13 +886,13 @@ public class AktoTools {
           "issueId": {
             "testSubCategory": "JWT_NONE_ALGO",
             "testErrorSource": "AUTOMATED_TESTING",
-            "testCategoryFromSourceConfig": "null",
+            "testCategoryFromSourceConfig": null,
             "apiInfoKey": {
               "method": "GET",
               "apiCollectionId": 1111111111,
               "url": "https://vulnerable-server.akto.io/api/college/student-details"
             },
-            "testSourceConfig": "null"
+            "testSourceConfig": null
           },
           "description": "test"
         }}
@@ -958,13 +967,13 @@ public class AktoTools {
           "issueId": {
             "testSubCategory": "JWT_HEADER_PARAM_INJECTION_KID",
             "testErrorSource": "AUTOMATED_TESTING",
-            "testCategoryFromSourceConfig": "null",
+            "testCategoryFromSourceConfig": null,
             "apiInfoKey": {
               "method": "GET",
               "apiCollectionId": 1111111111,
               "url": "https://vulnerable-server.akto.io/api/college/student-details"
             },
-            "testSourceConfig": "null"
+            "testSourceConfig": null
           }
         }}
         """)
@@ -1044,13 +1053,13 @@ public class AktoTools {
             {
               "testSubCategory": "JWT_HEADER_PARAM_INJECTION_KID",
               "testErrorSource": "AUTOMATED_TESTING",
-              "testCategoryFromSourceConfig": "null",
+              "testCategoryFromSourceConfig": null,
               "apiInfoKey": {
                 "method": "GET",
                 "apiCollectionId": 1111111111,
                 "url": "https://vulnerable-server.akto.io/api/college/dashboard/home"
               },
-              "testSourceConfig": "null"
+              "testSourceConfig": null
             }
           ],
           "reportFilterList": {

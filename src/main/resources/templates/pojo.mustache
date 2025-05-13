@@ -1,12 +1,13 @@
-
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.ai.tool.annotation.ToolParam;
 
 @Data
 @NoArgsConstructor
 public class {{classname}} {
 {{#vars}}
-    private {{datatype}} {{name}};
+
+    @ToolParam(required=false)
+    private {{{datatype}}} {{name}};
 {{/vars}}
 }

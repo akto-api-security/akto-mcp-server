@@ -75,7 +75,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
 
-      <!--<plugin>
+<!--      <plugin>
         <groupId>org.openapitools</groupId>
         <artifactId>openapi-generator-maven-plugin</artifactId>
         <version>7.6.0</version> &lt;!&ndash; or latest &ndash;&gt;
@@ -108,6 +108,26 @@
           </execution>
         </executions>
       </plugin>-->
+
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>cleanup-200response-models</id>
+            <phase>generate-sources</phase>
+            <configuration>
+              <target>
+                <delete>
+                  <fileset dir="${project.basedir}/src/main/java/io/akto/mcp/model" includes="*200Response*.java"/>
+                </delete>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 

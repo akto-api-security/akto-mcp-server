@@ -10,7 +10,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchSeverityInfoForIssues",
-        "operationId": "https://app.akto.io:443/api/fetchSeverityInfoForIssues-POST",
+        "operationId": "fetchSeverityInfoForIssues",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -434,7 +434,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getReportFilters",
-        "operationId": "https://app.akto.io:443/api/getReportFilters-POST",
+        "operationId": "getReportFilters",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -777,7 +777,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchCollectionWiseApiEndpoints",
-        "operationId": "https://app.akto.io:443/api/fetchCollectionWiseApiEndpoints-POST",
+        "operationId": "fetchCollectionWiseApiEndpoints",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -1042,7 +1042,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchBurpCredentials",
-        "operationId": "https://app.akto.io:443/api/fetchBurpCredentials-POST",
+        "operationId": "fetchBurpCredentials",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -1363,7 +1363,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getAllCollectionsBasic",
-        "operationId": "https://app.akto.io:443/api/getAllCollectionsBasic-POST",
+        "operationId": "getAllCollectionsBasic",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -1838,7 +1838,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/attachFileToIssue",
-        "operationId": "https://app.akto.io:443/api/attachFileToIssue-POST",
+        "operationId": "attachFileToIssue",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -2390,7 +2390,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchSlackWebhooks",
-        "operationId": "https://app.akto.io:443/api/fetchSlackWebhooks-POST",
+        "operationId": "fetchSlackWebhooks",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -2700,7 +2700,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchDataTypes",
-        "operationId": "https://app.akto.io:443/api/fetchDataTypes-POST",
+        "operationId": "fetchDataTypes",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -2959,7 +2959,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchAuthMechanismData",
-        "operationId": "https://app.akto.io:443/api/fetchAuthMechanismData-POST",
+        "operationId": "fetchAuthMechanismData",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -3326,7 +3326,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/checkWebhook",
-        "operationId": "https://app.akto.io:443/api/checkWebhook-POST",
+        "operationId": "checkWebhook",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -3695,7 +3695,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchMetadataFilters",
-        "operationId": "https://app.akto.io:443/api/fetchMetadataFilters-POST",
+        "operationId": "fetchMetadataFilters",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -4231,7 +4231,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchIssueFromTestRunResultDetails",
-        "operationId": "https://app.akto.io:443/api/fetchIssueFromTestRunResultDetails-POST",
+        "operationId": "fetchIssueFromTestRunResultDetails",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -4887,7 +4887,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchCountMapOfApis",
-        "operationId": "https://app.akto.io:443/api/fetchCountMapOfApis-POST",
+        "operationId": "fetchCountMapOfApis",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -5209,7 +5209,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchAllSubCategories",
-        "operationId": "https://app.akto.io:443/api/fetchAllSubCategories-POST",
+        "operationId": "fetchAllSubCategories",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -5487,7 +5487,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getSeverityInfoForCollections",
-        "operationId": "https://app.akto.io:443/api/getSeverityInfoForCollections-POST",
+        "operationId": "getSeverityInfoForCollections",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -5751,7 +5751,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchVulnerableRequests",
-        "operationId": "https://app.akto.io:443/api/fetchVulnerableRequests-POST",
+        "operationId": "fetchVulnerableRequests",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -6214,7 +6214,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchQuickStartPageState",
-        "operationId": "https://app.akto.io:443/api/fetchQuickStartPageState-POST",
+        "operationId": "fetchQuickStartPageState",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -6525,7 +6525,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchRecentParams",
-        "operationId": "https://app.akto.io:443/api/fetchRecentParams-POST",
+        "operationId": "fetchRecentParams",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -6795,7 +6795,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/createJiraIssue",
-        "operationId": "https://app.akto.io:443/api/createJiraIssue-POST",
+        "operationId": "createJiraIssue",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -7481,7 +7481,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/findTotalIssuesByDay",
-        "operationId": "https://app.akto.io:443/api/findTotalIssuesByDay-POST",
+        "operationId": "findTotalIssuesByDay",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -7914,7 +7914,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/loadSensitiveParameters",
-        "operationId": "https://app.akto.io:443/api/loadSensitiveParameters-POST",
+        "operationId": "loadSensitiveParameters",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -8211,7 +8211,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchSensitiveSampleData",
-        "operationId": "https://app.akto.io:443/api/fetchSensitiveSampleData-POST",
+        "operationId": "fetchSensitiveSampleData",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -8484,7 +8484,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/startTest",
-        "operationId": "https://app.akto.io:443/api/startTest-POST",
+        "operationId": "startTest",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -9054,7 +9054,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchNewParametersTrend",
-        "operationId": "https://app.akto.io:443/api/fetchNewParametersTrend-POST",
+        "operationId": "fetchNewParametersTrend",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -9356,7 +9356,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/deleteApiToken",
-        "operationId": "https://app.akto.io:443/api/deleteApiToken-POST",
+        "operationId": "deleteApiToken",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -9661,7 +9661,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/deleteTestRuns",
-        "operationId": "https://app.akto.io:443/api/deleteTestRuns-POST",
+        "operationId": "deleteTestRuns",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -10188,7 +10188,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchAktoGptConfig",
-        "operationId": "https://app.akto.io:443/api/fetchAktoGptConfig-POST",
+        "operationId": "fetchAktoGptConfig",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -10505,7 +10505,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchSensitiveParamsForEndpoints",
-        "operationId": "https://app.akto.io:443/api/fetchSensitiveParamsForEndpoints-POST",
+        "operationId": "fetchSensitiveParamsForEndpoints",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -10935,7 +10935,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchPropertyIds",
-        "operationId": "https://app.akto.io:443/api/fetchPropertyIds-POST",
+        "operationId": "fetchPropertyIds",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -11444,7 +11444,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchAdminSettings",
-        "operationId": "https://app.akto.io:443/api/fetchAdminSettings-POST",
+        "operationId": "fetchAdminSettings",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -12847,7 +12847,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getAllCollections",
-        "operationId": "https://app.akto.io:443/api/getAllCollections-POST",
+        "operationId": "getAllCollections",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -13525,7 +13525,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchTestContent",
-        "operationId": "https://app.akto.io:443/api/fetchTestContent-POST",
+        "operationId": "fetchTestContent",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -14130,7 +14130,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchApiInfosForCollection",
-        "operationId": "https://app.akto.io:443/api/fetchApiInfosForCollection-POST",
+        "operationId": "fetchApiInfosForCollection",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -14419,7 +14419,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchTestCoverageData",
-        "operationId": "https://app.akto.io:443/api/fetchTestCoverageData-POST",
+        "operationId": "fetchTestCoverageData",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -14836,7 +14836,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchNewEndpointsTrendForNonHostCollections",
-        "operationId": "https://app.akto.io:443/api/fetchNewEndpointsTrendForNonHostCollections-POST",
+        "operationId": "fetchNewEndpointsTrendForNonHostCollections",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -15138,7 +15138,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchCriticalIssuesTrend",
-        "operationId": "https://app.akto.io:443/api/fetchCriticalIssuesTrend-POST",
+        "operationId": "fetchCriticalIssuesTrend",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -15418,7 +15418,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchTestRoles",
-        "operationId": "https://app.akto.io:443/api/fetchTestRoles-POST",
+        "operationId": "fetchTestRoles",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -15933,7 +15933,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchSubTypeCountMap",
-        "operationId": "https://app.akto.io:443/api/fetchSubTypeCountMap-POST",
+        "operationId": "fetchSubTypeCountMap",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -16248,7 +16248,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchEndpointsCount",
-        "operationId": "https://app.akto.io:443/api/fetchEndpointsCount-POST",
+        "operationId": "fetchEndpointsCount",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -16610,7 +16610,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchMiniTestingServiceNames",
-        "operationId": "https://app.akto.io:443/api/fetchMiniTestingServiceNames-POST",
+        "operationId": "fetchMiniTestingServiceNames",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -16868,7 +16868,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getSingleEndpoint",
-        "operationId": "https://app.akto.io:443/api/getSingleEndpoint-POST",
+        "operationId": "getSingleEndpoint",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -17239,7 +17239,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/retrieveAllCollectionTests",
-        "operationId": "https://app.akto.io:443/api/retrieveAllCollectionTests-POST",
+        "operationId": "retrieveAllCollectionTests",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -17548,7 +17548,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getAllUsersCollections",
-        "operationId": "https://app.akto.io:443/api/getAllUsersCollections-POST",
+        "operationId": "getAllUsersCollections",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -17812,7 +17812,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getAllTestsCountMap",
-        "operationId": "https://app.akto.io:443/api/getAllTestsCountMap-POST",
+        "operationId": "getAllTestsCountMap",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -18117,7 +18117,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchIntegration",
-        "operationId": "https://app.akto.io:443/api/fetchIntegration-POST",
+        "operationId": "fetchIntegration",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -18626,7 +18626,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchVulnerableTestingRunResultsFromIssues",
-        "operationId": "https://app.akto.io:443/api/fetchVulnerableTestingRunResultsFromIssues-POST",
+        "operationId": "fetchVulnerableTestingRunResultsFromIssues",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -19239,7 +19239,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getCustomerEndpoints",
-        "operationId": "https://app.akto.io:443/api/getCustomerEndpoints-POST",
+        "operationId": "getCustomerEndpoints",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -19521,7 +19521,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getSeveritiesCountPerCollection",
-        "operationId": "https://app.akto.io:443/api/getSeveritiesCountPerCollection-POST",
+        "operationId": "getSeveritiesCountPerCollection",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -19810,7 +19810,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchCodeAnalysisApiInfos",
-        "operationId": "https://app.akto.io:443/api/fetchCodeAnalysisApiInfos-POST",
+        "operationId": "fetchCodeAnalysisApiInfos",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -20114,7 +20114,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchTestRunResultsCount",
-        "operationId": "https://app.akto.io:443/api/fetchTestRunResultsCount-POST",
+        "operationId": "fetchTestRunResultsCount",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -20405,7 +20405,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/addApiToken",
-        "operationId": "https://app.akto.io:443/api/addApiToken-POST",
+        "operationId": "addApiToken",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -20736,7 +20736,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/modifyTestingRunConfig",
-        "operationId": "https://app.akto.io:443/api/modifyTestingRunConfig-POST",
+        "operationId": "modifyTestingRunConfig",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -21819,7 +21819,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/updateIssueDescription",
-        "operationId": "https://app.akto.io:443/api/updateIssueDescription-POST",
+        "operationId": "updateIssueDescription",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -22316,7 +22316,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getTeamData",
-        "operationId": "https://app.akto.io:443/api/getTeamData-POST",
+        "operationId": "getTeamData",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -22602,7 +22602,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/send_event",
-        "operationId": "https://app.akto.io:443/api/send_event-POST",
+        "operationId": "send_event",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -23096,7 +23096,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchRemediationInfo",
-        "operationId": "https://app.akto.io:443/api/fetchRemediationInfo-POST",
+        "operationId": "fetchRemediationInfo",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -23368,7 +23368,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchNewEndpointsTrendForHostCollections",
-        "operationId": "https://app.akto.io:443/api/fetchNewEndpointsTrendForHostCollections-POST",
+        "operationId": "fetchNewEndpointsTrendForHostCollections",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -23646,7 +23646,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getAllTrafficAlerts",
-        "operationId": "https://app.akto.io:443/api/getAllTrafficAlerts-POST",
+        "operationId": "getAllTrafficAlerts",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -23904,7 +23904,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchTestRunResultDetails",
-        "operationId": "https://app.akto.io:443/api/fetchTestRunResultDetails-POST",
+        "operationId": "fetchTestRunResultDetails",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -24611,7 +24611,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getLastSeenTrafficInfoForCollections",
-        "operationId": "https://app.akto.io:443/api/getLastSeenTrafficInfoForCollections-POST",
+        "operationId": "getLastSeenTrafficInfoForCollections",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -24875,7 +24875,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchAffectedEndpoints",
-        "operationId": "https://app.akto.io:443/api/fetchAffectedEndpoints-POST",
+        "operationId": "fetchAffectedEndpoints",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -25485,7 +25485,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchAllIssues",
-        "operationId": "https://app.akto.io:443/api/fetchAllIssues-POST",
+        "operationId": "fetchAllIssues",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -26056,7 +26056,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/findTotalIssues",
-        "operationId": "https://app.akto.io:443/api/findTotalIssues-POST",
+        "operationId": "findTotalIssues",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -26394,7 +26394,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getSensitiveInfoForCollections",
-        "operationId": "https://app.akto.io:443/api/getSensitiveInfoForCollections-POST",
+        "operationId": "getSensitiveInfoForCollections",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -26766,7 +26766,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getRiskScoreInfo",
-        "operationId": "https://app.akto.io:443/api/getRiskScoreInfo-POST",
+        "operationId": "getRiskScoreInfo",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -27138,7 +27138,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getIssueSummaryInfo",
-        "operationId": "https://app.akto.io:443/api/getIssueSummaryInfo-POST",
+        "operationId": "getIssueSummaryInfo",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -27438,7 +27438,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchBurpPluginDownloadLink",
-        "operationId": "https://app.akto.io:443/api/fetchBurpPluginDownloadLink-POST",
+        "operationId": "fetchBurpPluginDownloadLink",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -27727,7 +27727,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchTestingRunResultSummaries",
-        "operationId": "https://app.akto.io:443/api/fetchTestingRunResultSummaries-POST",
+        "operationId": "fetchTestingRunResultSummaries",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -28586,7 +28586,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/generateReportPDF",
-        "operationId": "https://app.akto.io:443/api/generateReportPDF-POST",
+        "operationId": "generateReportPDF",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -28931,7 +28931,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchApiDependencies",
-        "operationId": "https://app.akto.io:443/api/fetchApiDependencies-POST",
+        "operationId": "fetchApiDependencies",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -29431,7 +29431,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchApiTokens",
-        "operationId": "https://app.akto.io:443/api/fetchApiTokens-POST",
+        "operationId": "fetchApiTokens",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -29992,7 +29992,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/checkIfDependencyGraphAvailable",
-        "operationId": "https://app.akto.io:443/api/checkIfDependencyGraphAvailable-POST",
+        "operationId": "checkIfDependencyGraphAvailable",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -30309,7 +30309,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getCoverageInfoForCollections",
-        "operationId": "https://app.akto.io:443/api/getCoverageInfoForCollections-POST",
+        "operationId": "getCoverageInfoForCollections",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -30573,7 +30573,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchTestingRunResults",
-        "operationId": "https://app.akto.io:443/api/fetchTestingRunResults-POST",
+        "operationId": "fetchTestingRunResults",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -31296,7 +31296,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchApiStats",
-        "operationId": "https://app.akto.io:443/api/fetchApiStats-POST",
+        "operationId": "fetchApiStats",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -31763,7 +31763,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/bulkUpdateIssueStatus",
-        "operationId": "https://app.akto.io:443/api/bulkUpdateIssueStatus-POST",
+        "operationId": "bulkUpdateIssueStatus",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -32459,7 +32459,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/bulkCreateJiraTickets",
-        "operationId": "https://app.akto.io:443/api/bulkCreateJiraTickets-POST",
+        "operationId": "bulkCreateJiraTickets",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -33063,7 +33063,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/loadRecentEndpoints",
-        "operationId": "https://app.akto.io:443/api/loadRecentEndpoints-POST",
+        "operationId": "loadRecentEndpoints",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -33510,7 +33510,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchUsageTestRuns",
-        "operationId": "https://app.akto.io:443/api/fetchUsageTestRuns-POST",
+        "operationId": "fetchUsageTestRuns",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -33776,7 +33776,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getCountForHostnameDeactivatedCollections",
-        "operationId": "https://app.akto.io:443/api/getCountForHostnameDeactivatedCollections-POST",
+        "operationId": "getCountForHostnameDeactivatedCollections",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -34603,7 +34603,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/getSummaryInfoForChanges",
-        "operationId": "https://app.akto.io:443/api/getSummaryInfoForChanges-POST",
+        "operationId": "getSummaryInfoForChanges",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -34893,7 +34893,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchAllTestSuites",
-        "operationId": "https://app.akto.io:443/api/fetchAllTestSuites-POST",
+        "operationId": "fetchAllTestSuites",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -35213,7 +35213,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchApiInfosFromSTIs",
-        "operationId": "https://app.akto.io:443/api/fetchApiInfosFromSTIs-POST",
+        "operationId": "fetchApiInfosFromSTIs",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -35540,7 +35540,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchSampleData",
-        "operationId": "https://app.akto.io:443/api/fetchSampleData-POST",
+        "operationId": "fetchSampleData",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -35902,7 +35902,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/loadParamsOfEndpoint",
-        "operationId": "https://app.akto.io:443/api/loadParamsOfEndpoint-POST",
+        "operationId": "loadParamsOfEndpoint",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -36351,7 +36351,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchUserLastLoginTs",
-        "operationId": "https://app.akto.io:443/api/fetchUserLastLoginTs-POST",
+        "operationId": "fetchUserLastLoginTs",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -36628,7 +36628,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchTestCollectionConfiguration",
-        "operationId": "https://app.akto.io:443/api/fetchTestCollectionConfiguration-POST",
+        "operationId": "fetchTestCollectionConfiguration",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -36933,7 +36933,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchScript",
-        "operationId": "https://app.akto.io:443/api/fetchScript-POST",
+        "operationId": "fetchScript",
         "parameters": [
           {
             "name": "sec-fetch-mode",
@@ -37197,7 +37197,7 @@
       "description": "description",
       "post": {
         "summary": "POST request for endpoint https://app.akto.io:443/api/fetchTestingRunResult",
-        "operationId": "https://app.akto.io:443/api/fetchTestingRunResult-POST",
+        "operationId": "fetchTestingRunResult",
         "parameters": [
           {
             "name": "sec-fetch-mode",
