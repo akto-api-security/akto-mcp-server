@@ -42,7 +42,7 @@ export AKTO_API_KEY=your_api_key
 java -jar target/mcp-1.0.jar
 ```
 
-> **Note:** To generate your `AKTO_API_KEY`, follow the instructions at the [Akto API Reference](https://docs.akto.io/api-reference/api-reference).
+> **Note:** To generate your `AKTO_API_KEY`, follow the instructions at the <a href="https://docs.akto.io/api-reference/api-reference" target="_blank">Akto API Reference</a>.
 
 **With Docker:**
 
