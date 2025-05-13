@@ -42,6 +42,8 @@ export AKTO_API_KEY=your_api_key
 java -jar target/mcp-1.0.jar
 ```
 
+> **Note:** To generate your `AKTO_API_KEY`, follow the instructions at the [Akto API Reference](https://docs.akto.io/api-reference/api-reference).
+
 **With Docker:**
 
 ```sh
@@ -83,7 +85,7 @@ Below is an example configuration for integrating with an MCP client:
 
 Refer to your MCP client's documentation for the exact location and format of this configuration.
 
-## Where to Add the MCP Server JSON Config
+## Examples of configuring with MCP client
 
 ### Cursor
 
