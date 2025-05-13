@@ -63,7 +63,7 @@ public class AktoTools {
           "startTimestamp": 0
         }}
         """)
-    public String retrieveAllCollectionTestsRequest(@RequestBody RetrieveAllCollectionTestsRequest request) {
+    public String retrieveAllCollectionTestsRequest(RetrieveAllCollectionTestsRequest request) {
         return getResponseFromAkto("api/retrieveAllCollectionTests", request);
     }
 
@@ -74,7 +74,7 @@ public class AktoTools {
           "endTimeStamp": 0
         }}
         """)
-    public String fetchSeverityInfoForIssues(@RequestBody Map<String, Object> request) {
+    public String fetchSeverityInfoForIssues(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchSeverityInfoForIssues", request);
     }
 
@@ -85,7 +85,7 @@ public class AktoTools {
           "generatedReportId": "6821a65c934b8e3c4f933659"
         }}
         """)
-    public String getReportFilters(@RequestBody Map<String, Object> request) {
+    public String getReportFilters(Map<String, Object> request) {
         return getResponseFromAkto("api/getReportFilters", request);
     }
 
@@ -96,7 +96,7 @@ public class AktoTools {
           "apiCollectionId": 1111111111
         }}
         """)
-    public String fetchCollectionWiseApiEndpoints(@RequestBody Map<String, Object> request) {
+    public String fetchCollectionWiseApiEndpoints(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchCollectionWiseApiEndpoints", request);
     }
 
@@ -118,7 +118,7 @@ public class AktoTools {
           "origReq": "{...}"
         }}
         """)
-    public String attachFileToIssueFull(@RequestBody Map<String, Object> request) {
+    public String attachFileToIssueFull(Map<String, Object> request) {
         return getResponseFromAkto("api/attachFileToIssue", request);
     }
 
@@ -166,7 +166,7 @@ public class AktoTools {
           "webhookType": "MICROSOFT_TEAMS"
         }}
         """)
-    public String checkWebhook(@RequestBody Map<String, Object> request) {
+    public String checkWebhook(Map<String, Object> request) {
         return getResponseFromAkto("api/checkWebhook", request);
     }
 
@@ -186,7 +186,7 @@ public class AktoTools {
           "testingRunResultHexId": "6821a4804eadbb6d7ca7c42c"
         }}
         """)
-    public String fetchIssueFromTestRunResultDetails(@RequestBody Map<String, Object> request) {
+    public String fetchIssueFromTestRunResultDetails(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchIssueFromTestRunResultDetails", request);
     }
 
@@ -209,7 +209,7 @@ public class AktoTools {
           "skip": 100
         }}
         """)
-    public String fetchAllSubCategories(@RequestBody Map<String, Object> request) {
+    public String fetchAllSubCategories(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchAllSubCategories", request);
     }
 
@@ -230,7 +230,7 @@ public class AktoTools {
           "skip": 400
         }}
         """)
-    public String fetchVulnerableRequests(@RequestBody Map<String, Object> request) {
+    public String fetchVulnerableRequests(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchVulnerableRequests", request);
     }
 
@@ -251,7 +251,7 @@ public class AktoTools {
           "startTimestamp": 1741804200
         }}
         """)
-    public String fetchRecentParams(@RequestBody Map<String, Object> request) {
+    public String fetchRecentParams(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchRecentParams", request);
     }
 
@@ -281,7 +281,7 @@ public class AktoTools {
           }
         }}
         """)
-    public String createJiraIssueFull(@RequestBody Map<String, Object> request) {
+    public String createJiraIssueFull(Map<String, Object> request) {
         return getResponseFromAkto("api/createJiraIssue", request);
     }
 
@@ -293,7 +293,7 @@ public class AktoTools {
           "startEpoch": 0
         }}
         """)
-    public String findTotalIssuesByDay(@RequestBody Map<String, Object> request) {
+    public String findTotalIssuesByDay(Map<String, Object> request) {
         return getResponseFromAkto("api/findTotalIssuesByDay", request);
     }
 
@@ -306,7 +306,7 @@ public class AktoTools {
           "url": "https://vulnerable-server.akto.io/api/college/student-details"
         }}
         """)
-    public String loadSensitiveParameters(@RequestBody Map<String, Object> request) {
+    public String loadSensitiveParameters(Map<String, Object> request) {
         return getResponseFromAkto("api/loadSensitiveParameters", request);
     }
 
@@ -319,7 +319,7 @@ public class AktoTools {
           "url": "https://vulnerable-server.akto.io/api/v2/feePayment"
         }}
         """)
-    public String fetchSensitiveSampleData(@RequestBody Map<String, Object> request) {
+    public String fetchSensitiveSampleData(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchSensitiveSampleData", request);
     }
 
@@ -330,7 +330,7 @@ public class AktoTools {
           "testingRunHexId": "6821a172934b8e3c4f933658"
         }}
         """)
-    public String startTest(@RequestBody Map<String, Object> request) {
+    public String startTest(Map<String, Object> request) {
         return getResponseFromAkto("api/startTest", request);
     }
 
@@ -342,7 +342,7 @@ public class AktoTools {
           "startTimestamp": 1741804200
         }}
         """)
-    public String fetchNewParametersTrend(@RequestBody Map<String, Object> request) {
+    public String fetchNewParametersTrend(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchNewParametersTrend", request);
     }
 
@@ -353,7 +353,7 @@ public class AktoTools {
           "apiTokenId": 1747031584
         }}
         """)
-    public String deleteApiToken(@RequestBody Map<String, Object> request) {
+    public String deleteApiToken(Map<String, Object> request) {
         return getResponseFromAkto("api/deleteApiToken", request);
     }
 
@@ -364,7 +364,7 @@ public class AktoTools {
           "testRunIds": ["681d9613fb52b52784e4240b"]
         }}
         """)
-    public String deleteTestRuns(@RequestBody Map<String, Object> request) {
+    public String deleteTestRuns(Map<String, Object> request) {
         return getResponseFromAkto("api/deleteTestRuns", request);
     }
 
@@ -386,7 +386,7 @@ public class AktoTools {
           "url": "https://vulnerable-server.akto.io/api/college/dashboard/home"
         }}
         """)
-    public String fetchSensitiveParamsForEndpoints(@RequestBody Map<String, Object> request) {
+    public String fetchSensitiveParamsForEndpoints(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchSensitiveParamsForEndpoints", request);
     }
 
@@ -443,7 +443,7 @@ public class AktoTools {
           }
         }}
         """)
-    public String fetchTestingRunResult(@RequestBody Map<String, Object> request) {
+    public String fetchTestingRunResult(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchTestingRunResult", request);
     }
 
@@ -486,7 +486,7 @@ public class AktoTools {
           "statusToBeUpdated": "string"
         }}
         """)
-    public String fetchRemediationInfo(@RequestBody Map<String, Object> request) {
+    public String fetchRemediationInfo(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchRemediationInfo", request);
     }
 
@@ -500,7 +500,7 @@ public class AktoTools {
           "url": "https://vulnerable-server.akto.io/api/college/dashboard/home"
         }}
         """)
-    public String fetchApiDependencies(@RequestBody Map<String, Object> request) {
+    public String fetchApiDependencies(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchApiDependencies", request);
     }
 
@@ -518,7 +518,7 @@ public class AktoTools {
           "queryValue": "severity:HIGH"
         }}
         """)
-    public String fetchTestRunResults(@RequestBody Map<String, Object> request) {
+    public String fetchTestRunResults(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchTestRunResults", request);
     }
 
@@ -535,7 +535,7 @@ public class AktoTools {
           "queryValue": "severity:HIGH"
         }}
         """)
-    public String fetchAllIssues(@RequestBody Map<String, Object> request) {
+    public String fetchAllIssues(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchAllIssues", request);
     }
 
@@ -548,7 +548,7 @@ public class AktoTools {
           "startTimestamp": 1741804200
         }}
         """)
-    public String fetchNewEndpointsTrend(@RequestBody Map<String, Object> request) {
+    public String fetchNewEndpointsTrend(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchNewEndpointsTrend", request);
     }
 
@@ -561,7 +561,7 @@ public class AktoTools {
           "endTimeStamp": 1778571718
         }}
         """)
-    public String fetchTestCoverageData(@RequestBody Map<String, Object> request) {
+    public String fetchTestCoverageData(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchTestCoverageData", request);
     }
 
@@ -574,7 +574,7 @@ public class AktoTools {
           "endTimeStamp": 1778571714
         }}
         """)
-    public String fetchCriticalIssuesTrend(@RequestBody Map<String, Object> request) {
+    public String fetchCriticalIssuesTrend(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchCriticalIssuesTrend", request);
     }
 
@@ -587,7 +587,7 @@ public class AktoTools {
           "endTimeStamp": 1778571718
         }}
         """)
-    public String fetchApiStats(@RequestBody Map<String, Object> request) {
+    public String fetchApiStats(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchApiStats", request);
     }
 
@@ -600,7 +600,7 @@ public class AktoTools {
           "startTimestamp": 0
         }}
         """)
-    public String fetchEndpointsCount(@RequestBody Map<String, Object> request) {
+    public String fetchEndpointsCount(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchEndpointsCount", request);
     }
 
@@ -624,7 +624,7 @@ public class AktoTools {
           "url": "https://vulnerable-server.akto.io/api/college/student-details"
         }}
         """)
-    public String getSingleEndpoint(@RequestBody Map<String, Object> request) {
+    public String getSingleEndpoint(Map<String, Object> request) {
         return getResponseFromAkto("api/getSingleEndpoint", request);
     }
 
@@ -636,7 +636,7 @@ public class AktoTools {
           "apiCollectionId": 1747033350
         }}
         """)
-    public String fetchApiInfosForCollection(@RequestBody Map<String, Object> request) {
+    public String fetchApiInfosForCollection(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchApiInfosForCollection", request);
     }
 
@@ -648,7 +648,7 @@ public class AktoTools {
           "originalTestId": "APACHE_APISIX_RCE"
         }}
         """)
-    public String fetchTestContent(@RequestBody Map<String, Object> arguments) {
+    public String fetchTestContent(Map<String, Object> arguments) {
         return getResponseFromAkto("api/fetchTestContent", arguments);
     }
 
@@ -671,7 +671,7 @@ public class AktoTools {
           "startTimestamp": 0
         }}
         """)
-    public String fetchSubTypeCountMap(@RequestBody Map<String, Object> request) {
+    public String fetchSubTypeCountMap(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchSubTypeCountMap", request);
     }
 
@@ -694,7 +694,7 @@ public class AktoTools {
           "startTimestamp": 0
         }}
         """)
-    public String getAllTestsCountMap(@RequestBody Map<String, Object> request) {
+    public String getAllTestsCountMap(Map<String, Object> request) {
         return getResponseFromAkto("api/getAllTestsCountMap", request);
     }
 
@@ -707,7 +707,7 @@ public class AktoTools {
           "startTimestamp": 1741804200
         }}
         """)
-    public String fetchNewEndpointsTrendForNonHostCollections(@RequestBody Map<String, Object> request) {
+    public String fetchNewEndpointsTrendForNonHostCollections(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchNewEndpointsTrendForNonHostCollections", request);
     }
 
@@ -744,7 +744,7 @@ public class AktoTools {
           "aktoDashboardHost": "https://app.akto.io"
         }}
         """)
-    public String bulkCreateJiraTickets(@RequestBody Map<String, Object> request) {
+    public String bulkCreateJiraTickets(Map<String, Object> request) {
         return getResponseFromAkto("api/bulkCreateJiraTickets", request);
     }
 
@@ -781,7 +781,7 @@ public class AktoTools {
           ]
         }}
         """)
-    public String fetchVulnerableTestingRunResultsFromIssues(@RequestBody Map<String, Object> request) {
+    public String fetchVulnerableTestingRunResultsFromIssues(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchVulnerableTestingRunResultsFromIssues", request);
     }
 
@@ -801,7 +801,7 @@ public class AktoTools {
           "apiCollectionId": 1747033350
         }}
         """)
-    public String getSeveritiesCountPerCollection(@RequestBody Map<String, Object> request) {
+    public String getSeveritiesCountPerCollection(Map<String, Object> request) {
         return getResponseFromAkto("api/getSeveritiesCountPerCollection", request);
     }
 
@@ -812,7 +812,7 @@ public class AktoTools {
           "apiCollectionId": 1747033350
         }}
         """)
-    public String fetchCodeAnalysisApiInfos(@RequestBody Map<String, Object> request) {
+    public String fetchCodeAnalysisApiInfos(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchCodeAnalysisApiInfos", request);
     }
 
@@ -823,7 +823,7 @@ public class AktoTools {
           "testingRunResultSummaryHexId": "6821a176992b895372dc1c0d"
         }}
         """)
-    public String fetchTestRunResultsCount(@RequestBody Map<String, Object> request) {
+    public String fetchTestRunResultsCount(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchTestRunResultsCount", request);
     }
 
@@ -834,7 +834,7 @@ public class AktoTools {
           "tokenUtility": "BURP"
         }}
         """)
-    public String addApiToken(@RequestBody Map<String, Object> request) {
+    public String addApiToken(Map<String, Object> request) {
         return getResponseFromAkto("api/addApiToken", request);
     }
 
@@ -866,7 +866,7 @@ public class AktoTools {
           "testingRunConfigId": 8236799
         }}
         """)
-    public String modifyTestingRunConfig(@RequestBody Map<String, Object> request) {
+    public String modifyTestingRunConfig(Map<String, Object> request) {
         return getResponseFromAkto("api/modifyTestingRunConfig", request);
     }
 
@@ -888,7 +888,7 @@ public class AktoTools {
           "description": "test"
         }}
         """)
-    public String updateIssueDescription(@RequestBody Map<String, Object> request) {
+    public String updateIssueDescription(Map<String, Object> request) {
         return getResponseFromAkto("api/updateIssueDescription", request);
     }
 
@@ -918,7 +918,7 @@ public class AktoTools {
           "startTimestamp": 1741804200
         }}
         """)
-    public String fetchNewEndpointsTrendForHostCollections(@RequestBody Map<String, Object> request) {
+    public String fetchNewEndpointsTrendForHostCollections(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchNewEndpointsTrendForHostCollections", request);
     }
 
@@ -938,7 +938,7 @@ public class AktoTools {
           "testingRunResultHexId": "6821a5ad4eadbb6d7ca83d76"
         }}
         """)
-    public String fetchTestRunResultDetails(@RequestBody Map<String, Object> request) {
+    public String fetchTestRunResultDetails(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchTestRunResultDetails", request);
     }
 
@@ -968,7 +968,7 @@ public class AktoTools {
           }
         }}
         """)
-    public String fetchAffectedEndpoints(@RequestBody Map<String, Object> request) {
+    public String fetchAffectedEndpoints(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchAffectedEndpoints", request);
     }
 
@@ -980,7 +980,7 @@ public class AktoTools {
           "endTimeStamp": 1747032542
         }}
         """)
-    public String findTotalIssues(@RequestBody Map<String, Object> request) {
+    public String findTotalIssues(Map<String, Object> request) {
         return getResponseFromAkto("api/findTotalIssues", request);
     }
 
@@ -1010,7 +1010,7 @@ public class AktoTools {
           "startTimestamp": 0
         }}
         """)
-    public String getIssueSummaryInfo(@RequestBody Map<String, Object> request) {
+    public String getIssueSummaryInfo(Map<String, Object> request) {
         return getResponseFromAkto("api/getIssueSummaryInfo", request);
     }
 
@@ -1032,7 +1032,7 @@ public class AktoTools {
           "startTimestamp": 0
         }}
         """)
-    public String fetchTestingRunResultSummaries(@RequestBody Map<String, Object> request) {
+    public String fetchTestingRunResultSummaries(Map<String, Object> request) {
         return getResponseFromAkto("api/fetchTestingRunResultSummaries", request);
     }
 
@@ -1061,7 +1061,7 @@ public class AktoTools {
           }
         }}
         """)
-    public String generateReportPDF(@RequestBody Map<String, Object> request) {
+    public String generateReportPDF(Map<String, Object> request) {
         return getResponseFromAkto("api/generateReportPDF", request);
     }
 
@@ -1083,7 +1083,7 @@ public class AktoTools {
           "url": "https://juiceshop.akto.io/rest/user/whoami"
         }}
         """)
-    public String checkIfDependencyGraphAvailable(@RequestBody Map<String, Object> request) {
+    public String checkIfDependencyGraphAvailable(Map<String, Object> request) {
         return getResponseFromAkto("api/checkIfDependencyGraphAvailable", request);
     }
 
