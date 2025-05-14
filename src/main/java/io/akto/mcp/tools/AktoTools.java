@@ -1,9 +1,9 @@
 package io.akto.mcp.tools;
 
 import io.akto.mcp.model.FetchSeverityInfoForIssuesRequest;
+import io.akto.mcp.model.FetchTestContentRequest;
 import io.akto.mcp.model.FetchTestingRunResultRequest;
 import io.akto.mcp.model.FetchTestingRunResultsRequest;
-import io.akto.mcp.model.TestingIssueId;
 import io.akto.mcp.models.RetrieveAllCollectionTestsRequest;
 import io.akto.mcp.processor.ApiProcessor;
 import java.util.Collections;
@@ -537,8 +537,8 @@ public class AktoTools {
           "originalTestId": "APACHE_APISIX_RCE"
         }}
         """)
-    public String fetchTestContent(Map<String, Object> arguments) {
-        return getResponseFromAkto("api/fetchTestContent", arguments);
+    public String fetchTestContent(FetchTestContentRequest request) {
+        return getResponseFromAkto("api/fetchTestContent", request);
     }
 
     @Tool(name = "fetchTestRoles", description = """
