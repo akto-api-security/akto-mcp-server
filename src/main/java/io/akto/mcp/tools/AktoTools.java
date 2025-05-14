@@ -600,7 +600,7 @@ public class AktoTools {
         return getResponseFromAkto("api/fetchNewEndpointsTrendForNonHostCollections", request);
     }
 
-    @Tool(name = "bulkUpdateIssueStatus", description = """
+/*    @Tool(name = "bulkUpdateIssueStatus", description = """
         Updates the status of multiple issues in bulk. Useful for mass issue management and status updates.
         
         Example request body:
@@ -608,7 +608,7 @@ public class AktoTools {
         """)
     public String bulkUpdateIssueStatus() {
         return getResponseFromAkto("api/bulkUpdateIssueStatus", null);
-    }
+    }*/
 
 /*    @Tool(name = "bulkCreateJiraTickets", description = """
         Creates multiple Jira tickets in bulk for selected issues. Useful for mass ticket creation and integration management.
@@ -887,7 +887,7 @@ public class AktoTools {
         return getResponseFromAkto("api/fetchTestingRunResultSummaries", request);
     }
 
-    @Tool(name = "generateReportPDF", description = """
+   /* @Tool(name = "generateReportPDF", description = """
         POST /api/generateReportPDF
         Example request body:
         {"request": {
@@ -914,7 +914,7 @@ public class AktoTools {
         """)
     public String generateReportPDF(Map<String, Object> request) {
         return getResponseFromAkto("api/generateReportPDF", request);
-    }
+    }*/
 
     @Tool(name = "checkIfDependencyGraphAvailable", description = """
         POST /api/checkIfDependencyGraphAvailable
