@@ -1,5 +1,6 @@
 package io.akto.mcp.tools;
 
+import io.akto.mcp.model.FetchAllIssuesRequest;
 import io.akto.mcp.model.FetchSeverityInfoForIssuesRequest;
 import io.akto.mcp.model.FetchTestContentRequest;
 import io.akto.mcp.model.FetchTestingRunResultRequest;
@@ -323,13 +324,13 @@ public class AktoTools {
         POST /api/fetchTestingRunResults
         Example request body:
         {"request": {
-          "queryMode": "AND",
+          "queryMode": "VULNERABLE",
           "sortKey": "severity",
-          "sortOrder": "desc",
+          "sortOrder": -1,
           "testingRunResultSummaryHexId": "6821a172934b8e3c4f933658",
-          "limit": 0,
+          "limit": 150,
           "skip": 0,
-          "queryValue": "severity:HIGH"
+          "queryValue": ""
         }}
         """)
     public String fetchTestingRunResults(FetchTestingRunResultsRequest request) {
@@ -393,38 +394,22 @@ public class AktoTools {
         return getResponseFromAkto("api/fetchApiDependencies", request);
     }
 
-    @Tool(name = "fetchTestRunResults", description = """
-        Retrieves detailed test run results with filtering and sorting options. Useful for analyzing test execution results and vulnerabilities.
-        
-        Example request body:
-        {"request": {
-          "queryMode": "AND",
-          "sortKey": "severity",
-          "sortOrder": "desc",
-          "testingRunResultSummaryHexId": "6821a172934b8e3c4f933658",
-          "limit": 0,
-          "skip": 0,
-          "queryValue": "severity:HIGH"
-        }}
-        """)
-    public String fetchTestRunResults(Map<String, Object> request) {
-        return getResponseFromAkto("api/fetchTestRunResults", request);
-    }
-
     @Tool(name = "fetchAllIssues", description = """
         Retrieves all issues with filtering and sorting capabilities.
         
         Example request body:
         {"request": {
-          "queryMode": "AND",
+          "activeCollections": "true",
           "sortKey": "severity",
           "sortOrder": -1,
-          "limit": 0,
+          "limit": 50,
+          "endTimeStamp": 1778571718,
+          "filterStatus": ["OPEN"],
           "skip": 0,
-          "queryValue": "severity:HIGH"
+          "startEpoch": 0
         }}
         """)
-    public String fetchAllIssues(Map<String, Object> request) {
+    public String fetchAllIssues(FetchAllIssuesRequest request) {
         return getResponseFromAkto("api/fetchAllIssues", request);
     }
 
@@ -946,8 +931,7 @@ public class AktoTools {
             return apiProcessor.processRequest(path, request, String.class, HttpMethod.POST);
         } catch (Exception e) {
             log.error("Error calling API: {}", e.getMessage(), e);
-            throw e;
+            return null;
         }
     }
-
 }

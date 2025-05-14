@@ -13,26 +13,12 @@
 
 package io.akto.mcp.model;
 
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
-import java.util.StringJoiner;
-import java.util.Objects;
-import java.util.Map;
-import java.util.HashMap;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonTypeName;
-import com.fasterxml.jackson.annotation.JsonValue;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import org.springframework.ai.tool.annotation.ToolParam;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.ai.tool.annotation.ToolParam;
 
 @Data
 @NoArgsConstructor
@@ -44,19 +30,19 @@ public class FetchAllIssuesRequest {
     @ToolParam(required=false)
     private String sortKey;
 
-    @ToolParam(required=false)
+    @ToolParam(required=false, description = "If sortKey is present then sortOrder must be passed. Determines the direction in which results are sorted. Use -1 for descending order (e.g., newest or highest values first) and 1 for ascending order (e.g., oldest or lowest values first).")
     private Integer sortOrder;
 
-    @ToolParam(required=false)
+    @ToolParam(description = "Number of issues to fetch per page. Must be a positive integer (greater than 0). Used for pagination to control the number of results returned in a single request. Example: limit=10 will return 10 issues per page.")
     private Integer limit;
 
-    @ToolParam(required=false)
+    @ToolParam(description = "End timestamp in seconds for filtering issues. Must not be a future value; typically use the current timestamp. Value is in seconds.")
     private Integer endTimeStamp;
 
-    @ToolParam(required=false)
+    @ToolParam(required=false, description = "List of statuses to filter issues by. Allowed values: OPEN, FIXED, IGNORED. Optional. Example: filterStatus=[\"OPEN\"]")
     private List<String> filterStatus;
 
-    @ToolParam(required=false)
+    @ToolParam(description = "Specifies how many records to skip. This is compulsory for pagination. Default is 0. Example: skip=0")
     private Integer skip;
 
     @ToolParam(required=false)
