@@ -872,35 +872,6 @@ public class AktoTools {
         return getResponseFromAkto("api/fetchTestingRunResultSummaries", request);
     }
 
-   /* @Tool(name = "generateReportPDF", description = """
-        POST /api/generateReportPDF
-        Example request body:
-        {"request": {
-          "issuesIdsForReport": [
-            {
-              "testSubCategory": "JWT_HEADER_PARAM_INJECTION_KID",
-              "testErrorSource": "AUTOMATED_TESTING",
-              "testCategoryFromSourceConfig": null,
-              "apiInfoKey": {
-                "method": "GET",
-                "apiCollectionId": 1111111111,
-                "url": "https://vulnerable-server.akto.io/api/college/dashboard/home"
-              },
-              "testSourceConfig": null
-            }
-          ],
-          "reportFilterList": {
-            "activeCollections": ["true"],
-            "endTimeStamp": [1778571718],
-            "filterStatus": ["OPEN"],
-            "startEpoch": [0]
-          }
-        }}
-        """)
-    public String generateReportPDF(Map<String, Object> request) {
-        return getResponseFromAkto("api/generateReportPDF", request);
-    }*/
-
     @Tool(name = "checkIfDependencyGraphAvailable", description = """
         POST /api/checkIfDependencyGraphAvailable
         Example request body:
