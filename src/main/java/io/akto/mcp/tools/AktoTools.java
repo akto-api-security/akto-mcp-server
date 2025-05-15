@@ -931,7 +931,7 @@ public class AktoTools {
             return apiProcessor.processRequest(path, request, String.class, HttpMethod.POST);
         } catch (Exception e) {
             log.error("Error calling API: {}", e.getMessage(), e);
-            return null;
+            throw e;
         }
     }
 }
