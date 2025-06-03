@@ -7,14 +7,18 @@ import io.akto.mcp.model.FetchTestingRunResultRequest;
 import io.akto.mcp.model.FetchTestingRunResultsRequest;
 import io.akto.mcp.models.RetrieveAllCollectionTestsRequest;
 import io.akto.mcp.processor.ApiProcessor;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.Collections;
 import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.ai.mcp.McpToolUtils;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 @Slf4j
 @Service
@@ -410,6 +414,10 @@ public class AktoTools {
         }}
         """)
     public String fetchAllIssues(FetchAllIssuesRequest request) {
+        return getResponseFromAkto("api/fetchAllIssues", request);
+    }
+
+    public String fetchAllIssues(Object request) {
         return getResponseFromAkto("api/fetchAllIssues", request);
     }
 
