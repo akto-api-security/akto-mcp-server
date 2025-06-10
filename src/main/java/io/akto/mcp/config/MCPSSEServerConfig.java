@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class MCPSSEServerConfig implements WebMvcConfigurer {
     @Bean
     public HttpServletSseServerTransportProvider servletSseServerTransportProvider() {
-        return new HttpServletSseServerTransportProvider(new ObjectMapper(), "/nayan");
+        return new HttpServletSseServerTransportProvider(new ObjectMapper(), "/mcp/message");
     }
 
     @Bean

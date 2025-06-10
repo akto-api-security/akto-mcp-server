@@ -25,6 +25,7 @@ public class ApiProcessor {
     private final RestTemplate restTemplate;
 
     private static final String API_KEY = System.getenv("AKTO_API_KEY");
+    private static final String AKTO_DASHBOARD_URL = System.getenv("AKTO_URL");
     private static final String AKTO_PROD_URL = "https://app.akto.io";
 
     public <T, R> T processRequest(String url, R request, Class<T> responseType, HttpMethod method) {
@@ -42,8 +43,14 @@ public class ApiProcessor {
 
         HttpEntity<R> entity = new HttpEntity<>(request, headers);
 
+
+        String host = AKTO_PROD_URL;
+        if (AKTO_DASHBOARD_URL != null && !AKTO_DASHBOARD_URL.isEmpty()) {
+            host = AKTO_PROD_URL;
+        }
+
         ResponseEntity<T> response = restTemplate.exchange(
-            AKTO_PROD_URL + "/" + url,
+            host + "/" + url,
             method,
             entity,
             responseType
