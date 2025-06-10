@@ -46,7 +46,7 @@ public class ApiProcessor {
 
         String host = AKTO_PROD_URL;
         if (AKTO_DASHBOARD_URL != null && !AKTO_DASHBOARD_URL.isEmpty()) {
-            host = AKTO_PROD_URL;
+            host = AKTO_DASHBOARD_URL;
         }
 
         ResponseEntity<T> response = restTemplate.exchange(
